@@ -4,3 +4,9 @@
     padding-right: 0;
   }
 }
+
+.card .card-image > img {
+  width: 20wh;
+  height: 400px;
+  object-fit: cover;
+}

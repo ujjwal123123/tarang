@@ -1,0 +1,29 @@
+extends /layout.pug
+
+block content
+  section.section.container
+    h1.title.is-1 Team
+
+    h2.title.is-3 Current Coordinators
+
+    .columns.mt-5.is-variable.is-centered.is-multiline
+      each coordinator in current_coordinators
+        .column.is-2-table.is-3-desktop
+          .card
+            .card-image.has-text-centered
+              img(src='/images/coordinators/' + coordinator.image)
+            .card-content
+              p.title.is-4= coordinator.name
+              p= coordinator.description
+              p 
+                a(href=coordinator.email)= coordinator.email
+
+    h2.title.is-3 Past Coordinators
+    .columns.mt-5.is-variable.is-centered.is-multiline
+      each coordinator in past_coordinators
+        .column.is-2-table.is-3-desktop
+          .card
+            .card-image.has-text-centered
+              img(src='/images/coordinators/' + coordinator.image)
+            .card-content
+              p.title.is-4= coordinator.name
