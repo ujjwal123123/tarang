@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ataasi",
+    "description": "Lorem ipsum",
+    "website": "https://ataasi.webnode.com",
+    "members": [
+      "Saurav Suman",
+      "Siddhant Jha",
+      "Atul Prakash",
+      "Saurabh Singh",
+      "Amartya Dutta",
+      "Vishesh Mishra"
+    ]
+  },
+  {
+    "name": "Lorem ipsum",
+    "description": "Lorem ipsum",
+    "members": ["Debaleena Chakraborty", "Harsh Gaur", "Aayush Maurya"]
+  }
+]

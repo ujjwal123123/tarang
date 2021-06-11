@@ -1,8 +1,31 @@
 extends /layout.pug
 
-block content 
+block content
   section.hero.is-primary
-    div.hero-body
+    .hero-body
       .container
         h1.title.is-1 Tarang
-        p.subtitle.is-3 The Music Club of IIITG 
+        p.subtitle.is-3 The Music Club of IIITG
+        p Lorem ipsum
+
+  .container
+    .section
+      h2.title.is-2 Bands
+
+      .columns.mt-5.is-variable-is-centered.is-multiline 
+        each band in bands 
+          .column.is-2-table.is-3-destop 
+            .card 
+              .card-content 
+                h3.title.is-4= band.name
+                p= band.description
+                p
+                  b Members:!{ ' ' }
+                  span #{ band.members.join(', ') }
+                if band.website
+                  p 
+                    a(href=band.website)= band.website
+
+  .container 
+    .section 
+      h2.title.is-2 Gallery
